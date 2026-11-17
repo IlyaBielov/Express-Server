@@ -1,24 +1,27 @@
 {
   "name": "express-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A minimal Express server: one route, port from the PORT variable",
+  "main": "src/index.js",
   "dependencies": {
-    "dotenv": "^8.0.0",
-    "express": "^4.17.1"
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IlyaBielov/Express-Server.git"
   },
-  "author": "",
+  "author": "Ilya Bielov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/IlyaBielov/Express-Server/issues"
   },
-  "homepage": "https://github.com/IlyaBielov/Express-Server#readme"
+  "homepage": "https://github.com/IlyaBielov/Express-Server#readme",
+  "engines": {
+    "node": ">=18"
+  }
 }
